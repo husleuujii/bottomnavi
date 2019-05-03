@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             tools:context=".DashboardFragment" android:id="@+id/frameLayout">
+    <Button
+            android:text="Total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@+id/editTextTotal"
+            android:layout_marginEnd="18dp" android:layout_marginRight="18dp" android:layout_marginBottom="211dp"/>
+    <Button
+            android:text="Average"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button2"
+            android:layout_marginTop="35dp"
+            app:layout_constraintTop_toBottomOf="@+id/button" app:layout_constraintEnd_toStartOf="@+id/editTextAve"
+            android:layout_marginEnd="18dp" android:layout_marginRight="18dp"/>
+    <TextView
+            android:text="Java"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewJava"
+            app:layout_constraintStart_toStartOf="@+id/text" android:layout_marginLeft="1dp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/editTextJava" android:layout_marginStart="1dp"/>
+    <TextView
+            android:text="Network"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text"
+            app:layout_constraintBaseline_toBaselineOf="@+id/editTextNetwork"
+            app:layout_constraintEnd_toStartOf="@+id/editTextNetwork" android:layout_marginEnd="35dp"
+            android:layout_marginRight="35dp"/>
+    <TextView
+            android:text="Database"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            app:layout_constraintTop_toTopOf="@+id/editTextDatabase"
+            app:layout_constraintEnd_toStartOf="@+id/editTextDatabase" android:layout_marginEnd="28dp"
+            android:layout_marginRight="28dp"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editTextJava"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintEnd_toEndOf="@+id/editTextNetwork"
+            app:layout_constraintBottom_toTopOf="@+id/editTextNetwork" android:layout_marginTop="30dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.606"
+    />
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editTextNetwork"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="160dp" android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp" app:layout_constraintEnd_toEndOf="parent"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editTextDatabase"
+            android:layout_marginTop="48dp"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNetwork" android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp" app:layout_constraintEnd_toEndOf="parent"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editTextTotal"
+            app:layout_constraintBaseline_toBaselineOf="@+id/button" android:layout_marginEnd="17dp"
+            android:layout_marginRight="17dp" app:layout_constraintEnd_toEndOf="parent"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editTextAve"
+            app:layout_constraintBaseline_toBaselineOf="@+id/button2" android:layout_marginEnd="17dp"
+            android:layout_marginRight="17dp" app:layout_constraintEnd_toEndOf="parent"/>
+</android.support.constraint.ConstraintLayout>
